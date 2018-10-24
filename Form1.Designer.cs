@@ -28,41 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbSoA = new System.Windows.Forms.Label();
-            this.lbSoB = new System.Windows.Forms.Label();
-            this.lbKQ = new System.Windows.Forms.Label();
+            this.txtA = new System.Windows.Forms.Label();
+            this.txtB = new System.Windows.Forms.Label();
+            this.txtKetQua = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.btCong = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // lbSoA
+            // txtA
             // 
-            this.lbSoA.AutoSize = true;
-            this.lbSoA.Location = new System.Drawing.Point(12, 44);
-            this.lbSoA.Name = "lbSoA";
-            this.lbSoA.Size = new System.Drawing.Size(29, 13);
-            this.lbSoA.TabIndex = 0;
-            this.lbSoA.Text = "Số a";
+            this.txtA.AutoSize = true;
+            this.txtA.Location = new System.Drawing.Point(12, 44);
+            this.txtA.Name = "txtA";
+            this.txtA.Size = new System.Drawing.Size(29, 13);
+            this.txtA.TabIndex = 0;
+            this.txtA.Text = "Số a";
             // 
-            // lbSoB
+            // txtB
             // 
-            this.lbSoB.AutoSize = true;
-            this.lbSoB.Location = new System.Drawing.Point(12, 77);
-            this.lbSoB.Name = "lbSoB";
-            this.lbSoB.Size = new System.Drawing.Size(29, 13);
-            this.lbSoB.TabIndex = 0;
-            this.lbSoB.Text = "Số b";
+            this.txtB.AutoSize = true;
+            this.txtB.Location = new System.Drawing.Point(12, 77);
+            this.txtB.Name = "txtB";
+            this.txtB.Size = new System.Drawing.Size(29, 13);
+            this.txtB.TabIndex = 0;
+            this.txtB.Text = "Số b";
             // 
-            // lbKQ
+            // txtKetQua
             // 
-            this.lbKQ.AutoSize = true;
-            this.lbKQ.Location = new System.Drawing.Point(12, 111);
-            this.lbKQ.Name = "lbKQ";
-            this.lbKQ.Size = new System.Drawing.Size(44, 13);
-            this.lbKQ.TabIndex = 0;
-            this.lbKQ.Text = "Kết quả";
+            this.txtKetQua.AutoSize = true;
+            this.txtKetQua.Location = new System.Drawing.Point(12, 111);
+            this.txtKetQua.Name = "txtKetQua";
+            this.txtKetQua.Size = new System.Drawing.Size(44, 13);
+            this.txtKetQua.TabIndex = 0;
+            this.txtKetQua.Text = "Kết quả";
             // 
             // textBox1
             // 
@@ -96,6 +96,7 @@
             this.btCong.TabIndex = 2;
             this.btCong.Text = "Cộng";
             this.btCong.UseVisualStyleBackColor = true;
+            this.btCong.Click += new System.EventHandler(this.btCong_Click);
             // 
             // Form1
             // 
@@ -106,9 +107,9 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.lbKQ);
-            this.Controls.Add(this.lbSoB);
-            this.Controls.Add(this.lbSoA);
+            this.Controls.Add(this.txtKetQua);
+            this.Controls.Add(this.txtB);
+            this.Controls.Add(this.txtA);
             this.Name = "Form1";
             this.Text = "Tính Toán";
             this.ResumeLayout(false);
@@ -118,9 +119,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lbSoA;
-        private System.Windows.Forms.Label lbSoB;
-        private System.Windows.Forms.Label lbKQ;
+        private System.Windows.Forms.Label txtA;
+        private System.Windows.Forms.Label txtB;
+        private System.Windows.Forms.Label txtKetQua;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
