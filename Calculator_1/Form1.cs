@@ -26,7 +26,7 @@ namespace Calculator_1
 
             double a = double.Parse(txtA.Text);
             double b = double.Parse(txtB.Text);
-            double c = a + b - 5;
+            double c = a + b;
             txtKetQua.Text = c.ToString();
         }
     }
